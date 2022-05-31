@@ -1,0 +1,519 @@
+body {
+  height: 100vh;
+  font-family: Montserrat, sans-serif;
+  margin: 0px;
+  background-color: white;
+  overflow: hidden;
+  background: gainsboro;
+  display: flex;
+  font-size: 500;
+}
+
+img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+#chatbot_toggle {
+  position: absolute;
+  right: 0;
+  border: none;
+  height: 48px;
+  width: 48px;
+      background: #fff;
+    backdrop-filter: blur(10px);
+    padding: 14px;
+    color: #111010;
+  z-index: 10;
+}
+
+#chatbot_toggle:hover {
+  backdrop-filter: blur(20px);
+}
+
+.close {
+  color: white;
+}
+
+.line {
+  height: 1px;
+  background-color: white;
+  width: 100%;
+}
+.main-card{
+border-radius: 30% !important;
+
+}
+
+.main-title {
+  padding: 4% 27%;
+  align-items: center;
+    background-color: #000;
+  color: #fff;
+  font-size: 22px;
+  position: absolute;
+  width: inherit;
+  font-weight: 500;
+  display: center;
+  text-transform: capitalize;
+  font-family: Montserrat, sans-serif;
+}
+
+.main-title>div {
+  height: 48px;
+  width: 48px;
+  display: flex;
+  margin-left: 8px;
+}
+
+.main-title svg {
+  height: 24px;
+  margin: auto;
+}
+
+.main-title>span {
+  margin: auto auto auto 8px;
+}
+
+.chat-area {
+  margin-top: 48px;
+  flex-grow: 1;
+  overflow: auto;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: #eeeeee;
+}
+
+.input-message {
+  padding: 8px 48px 8px 16px;
+  background-color: white;
+  color: black;
+  flex-grow: 1;
+  border: none;
+}
+
+.input-message:focus {
+  outline: none;
+}
+
+.input-div {
+  height: 48px;
+  display: flex;
+}
+
+.input-send,
+.input-mic {
+  background: rgba(255, 255, 255, 0.2);
+  width: 48px;
+  height: 48px;
+  right: 0%;
+  border: none;
+  cursor: pointer;
+}
+
+.input-mic {
+  left: 0%;
+}
+
+.input-send svg {
+  fill: white;
+  margin: 11px 8px;
+}
+
+.chat-message-div {
+  display: flex;
+}
+
+.chat-message-sent {
+margin: 8px 16px 8px 64px;
+    padding: 3% 18px;
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 100ms;
+    border-radius: 30px 30px 0px 30px;
+    font-family: Montserrat, sans-serif;
+    /* font-weight: 600; */
+    outline: 2px solid #333855;
+    border: 2px solid #ffffff;
+    color: #000000;
+    background-color: #b7d5f1;
+}
+
+.chat-message-received {
+    
+    margin: 8px 64px 8px 16px;
+    padding: 3% 18px;
+    /* overflow-wrap: break-word; */
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 100ms;
+    border-radius: 0px 30px 30px 30px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    border: 2px solid #0d0d0d;
+    color: #000000;
+    background-color: #ffffff;
+    outline: 3px solid #ffffff;
+}
+
+
+.loader {
+  width: 20px;
+}
+
+.chat-message-received .chatbotImage {
+ 
+  height: auto;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 5% 0%;
+    padding: 3% 0%;
+}
+
+.chat-message-received .chatbotLink {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    width: 200px;
+    text-transform: uppercase;
+    padding: 4% 16%;
+    margin: 0 15%;
+    line-height: 28px;
+    border-radius: 20px;
+
+}
+.chat-message-received .chatbotLink :hover {
+    color: white;
+    background-color: #535b89;
+    text-decoration: none;
+    width: 200px;
+    text-transform: uppercase;
+    padding: 4% 16%;
+    margin: 0 15%;
+    line-height: 28px;
+    border-radius: 20px;
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (min-width: 450px) {
+  .main-card {
+    width: 96%;
+    max-width: 400px;
+    height: calc(100% - 32px) !important;
+    border-radius: 8px !important;
+    max-height: 600px;
+    margin: 16px !important;
+  }
+
+  .collapsed {
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 24px !important;
+    margin: 16px !important;
+  }
+
+  .main-card {
+    background: white;
+    backdrop-filter: blur(10px);
+    color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transition: all 0.5s;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+
+/*Customizations*/
+.image {
+  padding: 20%;
+  margin-top: 5%;
+}
+
+.image img {
+      position: absolute;
+    width: 68%;
+    height: auto;
+    margin-right: 0%;
+    margin-left: 0%;
+}
+
+.form {
+  display: grid;
+  width: 80%;
+  position: absolute;
+  margin-top: 30%;
+  margin-right: 11%;
+  margin-left: 11%;
+  background-color: #fff;
+
+}
+
+.cred-form {
+  background-color: #fff;
+  width: 100%;
+
+}
+
+.form {
+  width: 100%;
+  height: auto;
+  margin-top: 0%;
+  background-color: #fff;
+  opacity: 1;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.form>.text-field {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  padding: 2%;
+  margin: 3% 18%;
+  height: 30px;
+  padding-left: 20px;
+  font-size: 14px;
+  color: gray;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: #ccc;
+}
+
+.form>#user-submit {
+  background-color: #535b89;
+  color: #fff;
+  padding: 2.5%;
+  margin: 3% 30%;
+  font-size: 16px;
+  height: 42px;
+  border-radius: 10px;
+}
+
+.form>#user-submit:hover {
+  background-color: #c71e63;
+  color: #fff;
+  padding: 2.5%;
+  margin: 2% 30%;
+  font-size: 16px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+
+.grid-container {
+  display: none;
+  display: inline-grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-right: 29%;
+  margin-left: 29%;
+}
+
+.grid-container>div {
+  width: 100%;
+  margin: 0;
+}
+
+.grid-container>div>img {
+  display: none;
+  width: 32px;
+  height: 32px;
+  padding: 0 1%;
+  margin-top: 20%;
+
+}
+
+.paragraph {
+  color: #000;
+  min-width: 100%;
+  text-align: center;
+  margin-top: 30%;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+
+@media (min-width: 450px) {
+  .image {
+    padding: 15%;
+  }
+
+  .image img {
+    position: absolute;
+    width: 68%;
+    height: auto;
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+
+  .form {
+    display: grid;
+    width: 80%;
+    position: absolute;
+    margin-top: 30%;
+    margin-right: 11%;
+    margin-left: 11%;
+    background-color: #fff;
+
+  }
+
+  .cred-form {
+    background-color: #fff;
+    width: 100%;
+
+  }
+
+  .form {
+    width: 100%;
+    height: auto;
+    margin-top: 0%;
+    background-color: #fff;
+    opacity: 1;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .form>.text-field {
+    border: 1px solid #b7d5f1;
+    border-radius: 10px;
+    padding: 2%;
+    margin: 3% 18%;
+    height: 30px;
+    padding-left: 20px;
+    outline-color: #fa4894;
+        color: #535b89;
+
+  }
+
+  ::placeholder {
+    /* Most modern browsers support this now. */
+    color: #868686;
+  }
+
+  .form>#user-submit {
+    background-color: #333333;
+    color: #fff;
+    padding: 2.5%;
+    margin: 2% 30%;
+    font-size: 16px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  .form>#user-submit:hover {
+    background-color: #333333;
+    color: #fff;
+    padding: 2.5%;
+    margin: 2% 30%;
+    font-size: 16px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+
+  .grid-container {
+    display: inline-grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-right: 29%;
+    margin-left: 29%;
+  }
+
+  .grid-container>div {
+    width: 100%;
+    margin: 0;
+  }
+
+  .grid-container>div>img {
+    width: 32px;
+    height: 32px;
+    padding: 0 1%;
+    margin-top: 20%;
+
+  }
+
+  .paragraph {
+    color: #000;
+    min-width: 100%;
+    text-align: center;
+    margin-top: 30%;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  @media (max-width: 451px) {
+
+    .icon-inner,
+    #chatbot,
+    .main-card,
+    .grid-container,
+    .image,
+    .cred-form,
+    .paragraph,
+    .text-field,
+    #user-submit {
+      visibility: hidden;
+      display: none;
+    }
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+}
