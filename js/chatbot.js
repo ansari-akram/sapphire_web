@@ -7,7 +7,7 @@ var thankyou_response = 'Thank You!<br/>If you want anything else just let us kn
 var shop_anything_response = 'Please feel free to shop anything.';
 var error_message = 'We did not understand what you are looking for.<br />Try to rephrase your query.';
 var no_product_response = "We don't have this product.<br>You can try another if you like.";
-var server_api = 'https://sparkwavegroup.onrender.com/;
+var server_api = 'https://sparkwavegroup.onrender.com/';
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 function send() {
