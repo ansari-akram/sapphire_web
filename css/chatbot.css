@@ -4,7 +4,7 @@ body {
   margin: 0px;
   background-color: white;
   overflow: hidden;
-  background: gainsboro;
+  background: blue;
   display: flex;
   font-size: 500;
 }
