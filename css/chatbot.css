@@ -233,7 +233,7 @@ margin: 8px 16px 8px 64px;
 
 @media (min-width: 450px) {
   .main-card {
-    width: 96%;
+    width: 95%;
     max-width: 400px;
     height: calc(100% - 32px) !important;
     border-radius: 8px !important;
@@ -273,7 +273,7 @@ background-color: #fff !important;
 
 @media (max-width: 450px) {
   .main-card {
-        max-width: 78% !important;
+        max-width: 95% !important;
     max-width: 400px;
     height: calc(100% - 32px) !important;
     border-radius: 8px !important;
@@ -320,16 +320,14 @@ background-color: #fff !important;
 background-color: #fff !important;
   }
   .chat-message-received .chatbotLink {
-          padding: 4% !important;
-    margin: 0% 2% !important;
-    line-height: 28px;
-    border-radius: 20px;
+        padding: 4% 16%!important;
+    margin: 0% 12% !important;
 
 }
 }
 @media (max-width: 380px) {
   .main-card {
-        width: 78% !important;
+        width: 95% !important;
     max-width: 400px;
     height: calc(100% - 32px) !important;
     border-radius: 8px !important;
@@ -386,15 +384,15 @@ background-color: #fff !important;
   }
   
   .chat-message-received .chatbotLink {
-          padding: 4% !important;
-    margin: 0% 2% !important;
+     padding: 4% 13%!important;
+    margin: 0% 1% !important;
 
 }
 }
 @media (max-width: 280px) {
   .main-card {
         width: 100% !important;
-    max-width: 400px;
+    max-width: 90% !important;
     height: calc(100% - 32px) !important;
     border-radius: 8px !important;
     max-height: 600px;
