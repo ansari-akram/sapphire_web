@@ -319,6 +319,13 @@ background-color: #fff !important;
 .chat-area{
 background-color: #fff !important;
   }
+  .chat-message-received .chatbotLink {
+          padding: 4% !important;
+    margin: 0% 2% !important;
+    line-height: 28px;
+    border-radius: 20px;
+
+}
 }
 @media (max-width: 380px) {
   .main-card {
@@ -377,6 +384,12 @@ background-color: #fff !important;
 .chat-area{
 background-color: #fff !important;
   }
+  
+  .chat-message-received .chatbotLink {
+          padding: 4% !important;
+    margin: 0% 2% !important;
+
+}
 }
 @media (max-width: 280px) {
   .main-card {
@@ -414,6 +427,11 @@ background-color: #fff !important;
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
+  .chat-message-received .chatbotLink {
+          padding: 2% !important;
+    margin: 0% !important;
+
+}
   .image {
     padding: 7% 17% 7% 17% !important;
     margin-top: 24% !important;
