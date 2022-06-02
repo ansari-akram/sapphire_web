@@ -186,8 +186,8 @@ img {
   text-decoration: none;
   width: 300px;
   text-transform: uppercase;
-  padding: 4% 8% !important;
-  margin: 0% 10% !important;
+  padding: 4% 9% !important;
+  margin: 0 5% !important;
   line-height: 28px;
   border-radius: 20px;
 
@@ -326,8 +326,8 @@ img {
   }
 
   .chat-message-received .chatbotLink {
-    padding: 4% 16% !important;
-    margin: 0% 12% !important;
+    padding: 4% 14% !important;
+    margin: 0% 5% !important;
 
   }
 }
@@ -393,8 +393,8 @@ img {
   }
 
   .chat-message-received .chatbotLink {
-    padding: 4% 13% !important;
-    margin: 0% 1% !important;
+    padding: 4% 14% !important;
+    margin: 0% 5% !important;
 
   }
 }
@@ -436,8 +436,8 @@ img {
   }
 
   .chat-message-received .chatbotLink {
-    padding: 2% !important;
-    margin: 0% !important;
+    padding: 2% 8% !important;
+    margin: 0 1% !important;
 
   }
 
