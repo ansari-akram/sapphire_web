@@ -148,7 +148,7 @@ img {
 .chat-message-received {
     min-width: 80% !important;
     margin: 8px 16px 8px 16px;
-    padding: 2% 0px;
+  padding: 3% 18px;
     /* overflow-wrap: break-word; */
     animation-name: fadeIn;
     animation-iteration-count: 1;
