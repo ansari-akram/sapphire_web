@@ -249,7 +249,7 @@ img {
 @media (min-width: 450px) {
   .main-card {
     width: 95%;
-    max-width: 440px;
+    max-width: 36%;
     height: calc(100% - 32px) !important;
     border-radius: 8px !important;
     max-height: 90% !important;
@@ -268,7 +268,7 @@ img {
     backdrop-filter: blur(10px);
     color: white;
     width: 77%;
-    max-height: 90% !important;
+    max-height: 96% !important;
     height: 100%;
     margin: 0px;
     border-radius: 0px;
