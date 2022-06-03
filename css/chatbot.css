@@ -146,7 +146,7 @@ img {
 }
 
 .chat-message-received {
-    min-width: 80% !important;
+    min-width: 70% !important;
     margin: 8px 16px 8px 16px;
   padding: 3% 18px;
     /* overflow-wrap: break-word; */
@@ -182,8 +182,7 @@ img {
 
 }
 .chat-message-received .chatbotLink {
-    color: white;
-    background-color: black;
+  
     text-decoration: none;
     width: 100% !important;
     text-transform: uppercase;
@@ -192,10 +191,9 @@ img {
     line-height: 43px;
     border-radius: 20px;
 }
-
+/*
 .chat-message-received .chatbotLink :hover {
-  color: white;
-  background-color: #535b89;
+  
   text-decoration: none;
   width: 200px;
   text-transform: uppercase;
@@ -204,6 +202,21 @@ img {
   line-height: 28px;
   border-radius: 20px;
 
+}
+
+
+*/
+.chat-message-received .chatbotLink .chatbotbutton{
+    max-width: 96% !important;
+    align-content: justify;
+    line-height: 30px;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 14px !important;
+    background-color: #000;
+    color: #fff;
+    border: 0;
+    outline: 0;
 }
 
 @keyframes fadeIn {
@@ -326,8 +339,8 @@ img {
   }
 
   .chat-message-received .chatbotLink {
-       padding: 4% 14% !important;
-    margin: 0% 20% !important;
+     padding: 4% 1% !important;
+    margin: 0% !important;
 
   }
 }
@@ -393,8 +406,8 @@ img {
   }
 
   .chat-message-received .chatbotLink {
-        padding: 4% 10% !important;
-    margin: 0% 17% !important;
+       padding: 4% 2% !important;
+    margin: 0% 0% !important;
 
   }
 }
@@ -436,12 +449,10 @@ img {
   }
 
   .chat-message-received .chatbotLink {
-color: #fff;
-    background-color: #000;
-    padding: 2% 12% !important;
-    margin: 0 16% !important;
+   padding: 2% 1% !important;
+    margin: 0 0% !important;
     text-decoration: none;
-    line-height: 30px;
+    line-height: 23px;
   }
 
   .image {
