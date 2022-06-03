@@ -146,21 +146,21 @@ img {
 }
 
 .chat-message-received {
-
-  margin: 8px 16px 8px 16px;
-  padding: 3% 18px;
-  /* overflow-wrap: break-word; */
-  animation-name: fadeIn;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 100ms;
-  border-radius: 0px 30px 30px 30px;
-  font-family: Montserrat, sans-serif;
-  font-weight: 500;
-  border: 2px solid #0d0d0d;
-  color: #000000;
-  background-color: #ffffff;
-  outline: 3px solid #ffffff;
+    min-width: 80% !important;
+    margin: 8px 16px 8px 16px;
+    padding: 2% 0px;
+    /* overflow-wrap: break-word; */
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 100ms;
+    border-radius: 0px 30px 30px 30px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    border: 2px solid #0d0d0d;
+    color: #000000;
+    background-color: #ffffff;
+    outline: 3px solid #ffffff;
 }
 
 
@@ -180,17 +180,17 @@ img {
   padding: 3% 0%;
 }
 
+}
 .chat-message-received .chatbotLink {
-  color: white;
-  background-color: black;
-  text-decoration: none;
-  width: 300px;
-  text-transform: uppercase;
-  padding: 4% 9% !important;
-  margin: 0 5% !important;
-  line-height: 28px;
-  border-radius: 20px;
-
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    width: 100% !important;
+    text-transform: uppercase;
+    padding: 4% 19% !important;
+    margin: 0 18% !important;
+    line-height: 28px;
+    border-radius: 20px;
 }
 
 .chat-message-received .chatbotLink :hover {
@@ -236,7 +236,7 @@ img {
 @media (min-width: 450px) {
   .main-card {
     width: 95%;
-    max-width: 400px;
+    max-width: 440px;
     height: calc(100% - 32px) !important;
     border-radius: 8px !important;
     max-height: 60% !important;
