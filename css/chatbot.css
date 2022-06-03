@@ -252,7 +252,7 @@ img {
     max-width: 440px;
     height: calc(100% - 32px) !important;
     border-radius: 8px !important;
-    max-height: 60% !important;
+    max-height: 90% !important;
     margin: 16px !important;
   }
 
@@ -268,7 +268,7 @@ img {
     backdrop-filter: blur(10px);
     color: white;
     width: 77%;
-    max-height: 80% !important;
+    max-height: 90% !important;
     height: 100%;
     margin: 0px;
     border-radius: 0px;
