@@ -7,7 +7,7 @@ var thankyou_response = 'Thank You!<br/>If you want anything else just let us kn
 var shop_anything_response = 'Please feel free to shop anything.';
 var error_message = 'We did not understand what you are looking for.<br />Try to rephrase your query.';
 var no_product_response = "We don't have this product.<br>You can try another if you like.";
-var server_api = 'https://sparkwavegroup.onrender.com/';
+var server_api = 'http://127.0.0.1:8000/';
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 function send() {
@@ -195,7 +195,7 @@ function onlyAddMsg(msg) {
 
 function addResponseMsgWithUrl(msg, img) {
   var div = document.createElement("div");
-  div.innerHTML = "<div class='chat-message-received'><img class='chatbotImage' src='" + server_api + img + "' /><br /><a class='chatbotLink' href='" + msg + "' target='_blank'>Shop Now</a></div>";
+  div.innerHTML = "<div class='chat-message-received'><img class='chatbotImage' src='" + server_api + img + "' /><a class='chatbotLink' href='" + msg + "' target='_blank'><button class='chatbotbutton' style='  width:100%; align-content: justify;line-height: 30px; padding: 2%; margin: 2%; border-radius: 30px;backgroundColor:#000; color:#fff;'>Shop Now</button></a></div>";
   div.className = "chat-message-div";
   document.getElementById("message-box").appendChild(div);
   document.getElementById("message-box").scrollTop = document.getElementById(
